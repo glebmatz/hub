@@ -1,0 +1,55 @@
+import { palette } from "@ui/theme/theme";
+import { StyleSheet } from "react-native";
+
+export const styles = StyleSheet.create({
+  postWrapper: {
+    position: "relative",
+    borderRadius: 4,
+    marginBottom: 6,
+  },
+  innerCircle: {
+    backgroundColor: palette.action,
+    width: 20,
+    height: 20,
+    borderRadius: 22,
+    justifyContent: "center",
+    alignItems: "center",
+  },
+  outerCircle: {
+    width: 24,
+    height: 24,
+    position: "absolute",
+    top: 8,
+    left: 8,
+    borderRadius: 24,
+    borderColor: palette.white,
+    borderWidth: 2,
+    zIndex: 10,
+    justifyContent: "center",
+    alignItems: "center",
+    shadowOffset: { width: 0, height: 4 },
+    shadowRadius: 4,
+    shadowColor: palette.black,
+    shadowOpacity: 0.4,
+    elevation: 4,
+  },
+  postOuter: {
+    position: "absolute",
+    zIndex: 9,
+    backgroundColor: palette.white + "66",
+    left: 0,
+    top: 0,
+    right: 0,
+    bottom: 0,
+  },
+  postInner: {
+    left: 0,
+    top: 0,
+    position: "absolute",
+    borderWidth: 1,
+    borderColor: palette.black,
+    zIndex: 2,
+    opacity: 0.1,
+    borderRadius: 5,
+  },
+});
